@@ -4,7 +4,6 @@
 #Save information to .txt file
 
 import os
-import psutil
 import platform
 import socket
 from pathlib import Path
@@ -14,7 +13,7 @@ info = platform.uname()
 print(f"OS/System: {info.system}")
 print(f"Release:   {info.release}")
 print(f"Version:   {info.version}")
-print(f"Machine:   {info.machine}")
+print(f"Machine architecture:   {info.machine}")
 
 #Getting network information
 def get_private_ip():
